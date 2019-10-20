@@ -13,7 +13,7 @@ services:
       - localhost.crt
       - localhost.key
     networks:
-      - public_proxy
+      - appnet
 
 secrets:
   localhost.crt:
@@ -22,5 +22,5 @@ secrets:
     external: true
 
 networks:
-  public_proxy:
+  appnet:
     external: true
